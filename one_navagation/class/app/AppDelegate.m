@@ -32,7 +32,7 @@
     //键盘
     [self keyBoard];
     
-    NSLog(@"github测试");
+
     
     return YES;
 }
