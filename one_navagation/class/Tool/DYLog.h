@@ -21,9 +21,14 @@
 #define DY_MethodName  [NSString stringWithUTF8String:__PRETTY_FUNCTION__]
 #define DY_LineNum  [NSNumber numberWithInt:__LINE__]
 
+
 #define NSLog( s, ... ) [DYLog logtext: \
 [NSString stringWithFormat:@"\n\n方法：%@:\n行号：%@\n输出：%@\n\n",DY_MethodName,DY_LineNum,[NSString stringWithFormat:(s), ##__VA_ARGS__]]\
 ]
+//#define NSLog(FORMAT, ...) fprintf(stderr,"\n方法: %s\n行号: %d\n输出:\n%s\n",\
+//[[[NSString stringWithUTF8String:__PRETTY_FUNCTION__] lastPathComponent] UTF8String],\
+//__LINE__, \
+//[[[NSString alloc] initWithData:[[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] dataUsingEncoding:NSUTF8StringEncoding] encoding:NSNonLossyASCIIStringEncoding] UTF8String]);
 
 #else
 

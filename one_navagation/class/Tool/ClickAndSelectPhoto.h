@@ -35,24 +35,6 @@ typedef void(^CallBack)(NSArray<UIImage *> *statusArray);
 
 
 
-
-
-
-
-
-
-/**
- *  actionSheet 选择照片 (用上面的类方即可)
- *
- *  @param VC       所在的控制器
- *  @param maxCount 多选最大数量
- */
-typedef void (^completBlcik)(NSArray<UIImage *> *imageArray);
-@property (nonatomic,copy)completBlcik takePhotoBlock;
-
-- (void)showActionSheerInViewController:(UIViewController *)VC maxCount:(NSInteger)maxCount callBack:(completBlcik)callback;
-
-
 @end
 
 

@@ -27,9 +27,12 @@
  *  @return 所需的日期
  */
 +(NSString*)getStartDateToDate:(int)differ withDate:(NSDate*)date;
+
+
 +(NSDate*)getDateFromString:(NSString*)dateString;
 +(NSString*)getStringFromDate:(NSDate*)date;
 + (NSString *)currentDateDescription;
 +(NSDateComponents*)getDateComponentFromDate:(NSDate*)date;
+
 
 @end

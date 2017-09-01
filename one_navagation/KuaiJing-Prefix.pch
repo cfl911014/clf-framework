@@ -32,7 +32,6 @@
 #import "ZLPhoto.h"
 
 //宏定义
-
 #import "HttpHelp.h"         //网络强求
 #import "AppPromptsMicro.h"  //appKey
 #import "WBSkinDefine.h"     //宏皮肤
@@ -60,10 +59,10 @@
 
 //方法
 #import "KJSizeOfString.h"   //根据文字计算最大高度
-#import "CalculateUtil.h"    //时间
 #import "KJHtmlFilter.h"     //html标签过滤
 #import "MyDefaults.h"       //userdefaults
 #import "PhoneEmailCardId.h" //验证手机号邮箱身份证号正则
+#import "TimeClass.h"        //时间
 
 
 #endif /* KuaiJing-Prefix_pch */

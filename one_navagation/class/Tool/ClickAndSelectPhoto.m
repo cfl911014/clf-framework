@@ -10,6 +10,9 @@
 
 @interface ClickAndSelectPhoto ()<UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 
+typedef void (^completBlcik)(NSArray<UIImage *> *imageArray);
+@property (nonatomic,copy)completBlcik takePhotoBlock;
+
 @end
 
 
